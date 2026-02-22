@@ -1,1 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Premium Mod APK v9.1.26.2265 Download (Updated 2026)</title>
+    <meta name="description" content="Download Spotify Premium Mod APK Latest Version 2026. Enjoy ad-free music, unlimited skips, and high-quality audio for free.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Tailwind Config for Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        spotify: {
+                            green: '#1DB954',
+                            dark: '#121212',
+                            darker: '#000000',
+                            gray: '#282828',
+                            light: '#B3B3B3'
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121212;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1DB954;
+        }
+
+        /* Glassmorphism Utilities */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(to right, #1DB954, #1ed760);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Table Styling */
+        .custom-table th {
+            background-color: #1DB954;
+            color: white;
+        }
+        .custom-table tr:nth-child(even) {
+            background-color: #181818;
+        }
+        .custom-table tr:hover {
+            background-color: #282828;
+        }
+    </style>
+</head>
+<body class="bg-spotify-darker text-white font-sans antialiased overflow-x-hidden selection:bg-spotify-green selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <i class="fa-brands fa-spotify text-4xl text-spotify-green"></i>
+                    <span class="font-bold text-2xl tracking-tighter">Spotify<span class="text-spotify-green">Music</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#features" class="hover:text-spotify-green transition-colors px-3 py-2 rounded-md text-sm font-medium">Features</a>
+                        <a href="#download" class="hover:text-spotify-green transition-colors px-3 py-2 rounded-md text-sm font-medium">Download</a>
+                        <a href="#comparison" class="hover:text-spotify-green transition-colors px-3 py-2 rounded-md text-sm font-medium">Comparison</a>
+                        <a href="#faq" class="hover:text-spotify-green transition-colors px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="https://thespotifymodapk.in/" class="bg-spotify-green hover:bg-green-400 text-black font-bold py-2 px-6 rounded-full transition-transform transform hover:scale-105 shadow-lg shadow-green-900/50">
+                        Get APK
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="toggleMobileMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-black border-b border-gray-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#features" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
+                <a href="#download" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Download</a>
+                <a href="#comparison" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Comparison</a>
+                <a href="https://thespotifymodapk.in/" class="text-spotify-green font-bold block px-3 py-2 rounded-md text-base">Download Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full z-0 pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-spotify-green rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style="animation-delay: 2s"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full glass text-spotify-green text-sm font-semibold tracking-wide border border-spotify-green/30">
+                <i class="fa-solid fa-bolt mr-2"></i> v9.1.26.2265 Updated Feb 2026
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Spotify Premium <br>
+                <span class="text-gradient">Mod APK Download</span><br>
+                <span class="text-3xl md:text-5xl text-gray-400 font-bold">Latest Version 2026</span>
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400">
+                If you love music, you probably already know about Spotify. It is the biggest music streaming app in the world with over 600 million users. But here is the thing. The free version comes with annoying ads, limited skips, and lower audio quality. That is why millions of people search for <strong>Spotify Premium Mod APK</strong> every single day.
+            </p>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">
+                In this complete guide, you will learn everything about the <strong>Spotify Mod APK</strong> in 2026.
+            </p>
+            
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="https://thespotifymodapk.in/" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-black transition-all duration-200 bg-spotify-green rounded-full hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-spotify-green focus:ring-offset-gray-900 shadow-[0_0_20px_rgba(29,185,84,0.5)] hover:shadow-[0_0_30px_rgba(29,185,84,0.7)] transform hover:-translate-y-1">
+                    <i class="fa-solid fa-download mr-2"></i> Download Spotify Mod APK
+                    <div class="absolute inset-0 rounded-full ring-2 ring-white/20 group-hover:ring-white/40 animate-pulse-slow"></div>
+                </a>
+            </div>
+            
+            <div class="mt-8 flex justify-center items-center gap-6 text-sm text-gray-500">
+                <span class="flex items-center"><i class="fa-solid fa-check text-spotify-green mr-2"></i> No Ads</span>
+                <span class="flex items-center"><i class="fa-solid fa-check text-spotify-green mr-2"></i> 320kbps</span>
+                <span class="flex items-center"><i class="fa-solid fa-check text-spotify-green mr-2"></i> Offline Mode</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Details & Intro -->
+    <section class="py-16 bg-spotify-dark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-white">What is Spotify Premium Mod APK?</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Let us keep it simple. <strong>Spotify Premium Mod APK</strong> is a modified version of the official Spotify app. It is not made by Spotify itself but by third party developers who unlock all the premium features so you can use them without paying for a subscription.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        With this modded version, you get access to features like ad free listening, unlimited skips, offline downloads, and high quality audio streaming at 320 kbps. Think of it like getting the full Spotify Premium experience without the monthly bill.
+                    </p>
+                    <div class="p-4 border-l-4 border-spotify-green bg-gray-800/50 rounded-r-lg">
+                        <p class="text-sm text-gray-300 italic">
+                            "Important: Spotify Premium Mod APK is not available on the Google Play Store. You need to download it from a trusted third party source."
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- App Details Card -->
+                <div class="glass rounded-2xl p-8 shadow-2xl">
+                    <h3 class="text-xl font-bold mb-6 text-spotify-green">App Details at a Glance</h3>
+                    <div class="grid grid-cols-2 gap-y-4 gap-x-2 text-sm">
+                        <div class="text-gray-400">App Name</div>
+                        <div class="text-white font-semibold text-right">Spotify Premium Mod APK</div>
+                        
+                        <div class="text-gray-400">Latest Version</div>
+                        <div class="text-white font-semibold text-right">v9.1.26.2265 (Feb 2026)</div>
+                        
+                        <div class="text-gray-400">Size</div>
+                        <div class="text-white font-semibold text-right">~70 MB</div>
+                        
+                        <div class="text-gray-400">Android Requirement</div>
+                        <div class="text-white font-semibold text-right">Android 5.0+</div>
+                        
+                        <div class="text-gray-400">Category</div>
+                        <div class="text-white font-semibold text-right">Music and Audio</div>
+                        
+                        <div class="text-gray-400">Price</div>
+                        <div class="text-spotify-green font-bold text-right">FREE</div>
+                        
+                        <div class="text-gray-400">Downloads</div>
+                        <div class="text-white font-semibold text-right">1 Billion+</div>
+                        
+                        <div class="text-gray-400">Rating</div>
+                        <div class="text-white font-semibold text-right">4.9 out of 5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why People Prefer -->
+    <section class="py-16 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 text-center">Why People Prefer Spotify Premium APK in 2026</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-800 hover:border-spotify-green transition-colors">
+                    <div class="w-12 h-12 bg-spotify-green/20 rounded-full flex items-center justify-center text-spotify-green mb-4">
+                        <i class="fa-solid fa-dollar-sign text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Price Hikes</h3>
+                    <p class="text-gray-400">Spotify recently increased its premium prices again in February 2026. The Individual plan now costs $12.99 per month, making it harder for many to afford.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-800 hover:border-spotify-green transition-colors">
+                    <div class="w-12 h-12 bg-spotify-green/20 rounded-full flex items-center justify-center text-spotify-green mb-4">
+                        <i class="fa-solid fa-globe text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Global Access</h3>
+                    <p class="text-gray-400">In many countries like India, Pakistan, Brazil, and Indonesia, even lower priced plans feel expensive. The Mod APK gives access without the cost.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-800 hover:border-spotify-green transition-colors">
+                    <div class="w-12 h-12 bg-spotify-green/20 rounded-full flex items-center justify-center text-spotify-green mb-4">
+                        <i class="fa-solid fa-try text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Try Before Buy</h3>
+                    <p class="text-gray-400">Many people just want to try premium features before committing to a paid plan. The Spotify Premium APK gives them that chance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-20 bg-spotify-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Features of Spotify Mod APK <span class="text-spotify-green">(2026 Edition)</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">This is where it gets exciting. The download Spotify Premium Mod APK version for 2026 comes loaded with features.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature 1 -->
+                <div class="glass p-6 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fa-solid fa-ban text-3xl text-red-500"></i>
+                        <span class="text-xs font-bold bg-red-500/20 text-red-500 px-2 py-1 rounded">NO ADS</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-spotify-green transition-colors">Ad Free Music Streaming</h3>
+                    <p class="text-gray-400 text-sm">Nobody likes ads interrupting their favorite song. With the Spotify Mod APK, all audio and video ads are completely blocked.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="glass p-6 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fa-solid fa-forward text-3xl text-spotify-green"></i>
+                        <span class="text-xs font-bold bg-spotify-green/20 text-spotify-green px-2 py-1 rounded">UNLIMITED</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-spotify-green transition-colors">Unlimited Skips</h3>
+                    <p class="text-gray-400 text-sm">The free version only allows 6 skips per hour. With the mod, skip as many songs as you want without any limit.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="glass p-6 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fa-solid fa-download text-3xl text-blue-500"></i>
+                        <span class="text-xs font-bold bg-blue-500/20 text-blue-500 px-2 py-1 rounded">OFFLINE</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-spotify-green transition-colors">Offline Downloads</h3>
+                    <p class="text-gray-400 text-sm">Download your favorite songs, playlists, and podcasts directly to your phone. Perfect for traveling or commuting.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="glass p-6 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fa-solid fa-music text-3xl text-purple-500"></i>
+                        <span class="text-xs font-bold bg-purple-500/20 text-purple-500 px-2 py-1 rounded">320 KBPS</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-spotify-green transition-colors">High Quality Audio</h3>
+                    <p class="text-gray-400 text-sm">Unlocks the highest audio quality available, streaming at 320 kbps. Every beat sounds crisp and clear.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="glass p-6 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fa-solid fa-play text-3xl text-yellow-500"></i>
+                        <span class="text-xs font-bold bg-yellow-500/20 text-yellow-500 px-2 py-1 rounded">ON DEMAND</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-spotify-green transition-colors">Play Any Song</h3>
+                    <p class="text-gray-400 text-sm">Removes the shuffle restriction. Just tap on any song and it starts playing immediately.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="glass p-6 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="flex items-center justify-between mb-4">
+                        <i class="fa-solid fa-mobile-screen text-3xl text-pink-500"></i>
+                        <span class="text-xs font-bold bg-pink-500/20 text-pink-500 px-2 py-1 rounded">NO ROOT</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-spotify-green transition-colors">No Root Required</h3>
+                    <p class="text-gray-400 text-sm">You do not need to root your Android phone. It works on any standard Android device running version 5.0 or higher.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's New -->
+    <section class="py-16 bg-black border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-10 text-center">What is New in <span class="text-spotify-green">2026 Version</span></h2>
+            <div class="space-y-6">
+                <div class="flex gap-4 items-start p-4 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div class="bg-spotify-green/10 p-3 rounded-lg text-spotify-green mt-1"><i class="fa-solid fa-wave-square"></i></div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white">Lossless Audio Support</h4>
+                        <p class="text-gray-400 text-sm">Spotify has started rolling out lossless audio (24-bit/44.1 kHz FLAC) to premium users. The mod APK version also supports this.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start p-4 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div class="bg-spotify-green/10 p-3 rounded-lg text-spotify-green mt-1"><i class="fa-solid fa-robot"></i></div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white">AI Powered Playlists</h4>
+                        <p class="text-gray-400 text-sm">Create custom playlists from simple text prompts. Just type what you are in the mood for, and Spotify builds it for you.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start p-4 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div class="bg-spotify-green/10 p-3 rounded-lg text-spotify-green mt-1"><i class="fa-solid fa-video"></i></div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white">Music Videos</h4>
+                        <p class="text-gray-400 text-sm">Spotify has expanded music video support to premium users. Watch official music videos right inside the app.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section id="comparison" class="py-20 bg-spotify-dark overflow-x-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 text-center">Spotify Free vs Premium vs Mod APK</h2>
+            <div class="rounded-xl border border-gray-700 overflow-hidden min-w-[600px]">
+                <table class="w-full text-left text-sm text-gray-400 custom-table">
+                    <thead class="text-xs uppercase bg-gray-800 text-white">
+                        <tr>
+                            <th scope="col" class="px-6 py-4">Feature</th>
+                            <th scope="col" class="px-6 py-4 text-center">Spotify Free</th>
+                            <th scope="col" class="px-6 py-4 text-center">Spotify Premium</th>
+                            <th scope="col" class="px-6 py-4 text-center bg-spotify-green text-black">Spotify Mod APK</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-white">Monthly Price</td>
+                            <td class="px-6 py-4 text-center">$0</td>
+                            <td class="px-6 py-4 text-center">$12.99/month</td>
+                            <td class="px-6 py-4 text-center font-bold text-spotify-green">Free</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-white">Ads</td>
+                            <td class="px-6 py-4 text-center text-red-400">Yes</td>
+                            <td class="px-6 py-4 text-center text-green-400">No Ads</td>
+                            <td class="px-6 py-4 text-center text-green-400 font-bold">No Ads</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-white">Audio Quality</td>
+                            <td class="px-6 py-4 text-center">Up to 160 kbps</td>
+                            <td class="px-6 py-4 text-center">Up to 320 kbps</td>
+                            <td class="px-6 py-4 text-center font-bold text-spotify-green">Up to 320 kbps</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-white">Offline Downloads</td>
+                            <td class="px-6 py-4 text-center text-red-400">Not Available</td>
+                            <td class="px-6 py-4 text-center text-green-400">Yes</td>
+                            <td class="px-6 py-4 text-center font-bold text-spotify-green">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-white">Unlimited Skips</td>
+                            <td class="px-6 py-4 text-center text-red-400">No (6 per hour)</td>
+                            <td class="px-6 py-4 text-center text-green-400">Yes</td>
+                            <td class="px-6 py-4 text-center font-bold text-spotify-green">Yes</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-white">Account Safety</td>
+                            <td class="px-6 py-4 text-center text-green-400">Safe</td>
+                            <td class="px-6 py-4 text-center text-green-400">Safe</td>
+                            <td class="px-6 py-4 text-center text-yellow-400 font-bold">Risk of Ban</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="py-16 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 text-center">Official Spotify Premium Plans <span class="text-sm font-normal text-gray-500 block mt-2">(2026 Updated)</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Individual -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">Individual</h3>
+                    <div class="text-3xl font-bold mb-4">$12.99<span class="text-sm text-gray-500 font-normal">/month</span></div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6 flex-1">
+                        <li><i class="fa-solid fa-check text-spotify-green mr-2"></i>1 account</li>
+                        <li><i class="fa-solid fa-check text-spotify-green mr-2"></i>Ad-free</li>
+                        <li><i class="fa-solid fa-check text-spotify-green mr-2"></i>15 hours audiobooks</li>
+                    </ul>
+                </div>
+                <!-- Duo -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">Duo</h3>
+                    <div class="text-3xl font-bold mb-4">$18.99<span class="text-sm text-gray-500 font-normal">/month</span></div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6 flex-1">
+                        <li><i class="fa-solid fa-check text-spotify-green mr-2"></i>2 accounts</li>
+                        <li><i class="fa-solid fa-check text-spotify-green mr-2"></i>Duo Mix playlist</li>
+                    </ul>
+                </div>
+                <!-- Family -->
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 flex flex-col">
+                    <h3 class="text-xl font-bold mb-2">Family</h3>
+                    <div class="text-3xl font-bold mb-4">$21.99<span class="text-sm text-gray-500 font-normal">/month</span></div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6 flex-1">
+                        <li><i class="fa-solid fa-check text-spotify-green mr-2"></i>6 accounts</li>
+                        <li><i class="fa-solid fa-check text-spotify-green mr-2"></i>Parental controls</li>
+                    </ul>
+                </div>
+                <!-- Student -->
+                <div class="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-xl border border-spotify-green/50 flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-spotify-green text-black text-xs font-bold px-2 py-1 rounded-bl-lg">BEST VALUE</div>
+                    <h3 class="text-xl font-bold mb-2">Student</h3>
+                    <div class="text-3xl font-bold mb-4">$6.99<span class="text-sm text-gray-500 font-normal">/month</span></div>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-6 flex-1">
+                        <li><i class="fa-solid fa-check text-spotify-green mr-2"></i>1 verified account</li>
+                        <li><i class="fa-solid fa-check text-spotify-green mr-2"></i>All Premium features</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-6"><strong>Pro Tip:</strong> If you are a student, the Student plan at $6.99 per month is the most affordable way to get official Spotify Premium.</p>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-20 bg-spotify-green relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-bold text-black mb-6">How to Download for Android</h2>
+            <p class="text-black/80 text-lg mb-8">Downloading and installing the Spotify Premium Mod APK on your Android phone is pretty straightforward. Just follow these simple steps.</p>
+            
+            <div class="bg-black text-white rounded-2xl p-8 shadow-2xl text-left mb-8">
+                <ol class="space-y-4 list-decimal list-inside marker:text-spotify-green marker:font-bold">
+                    <li>Uninstall the official Spotify app from your phone if you already have it installed.</li>
+                    <li>Click the download button below to get the latest APK file.</li>
+                    <li>Open your phone Settings and go to Security. Enable "Install from Unknown Sources".</li>
+                    <li>Open the downloaded APK file and tap Install.</li>
+                    <li>Open the app, log in, and start enjoying premium features for free.</li>
+                </ol>
+                <div class="mt-6 p-4 bg-gray-800 rounded-lg border-l-4 border-yellow-500">
+                    <p class="text-sm text-gray-300"><strong>Pro Tip:</strong> For safety, always use a secondary Spotify account with the mod APK instead of your main account.</p>
+                </div>
+            </div>
+
+            <a href="https://thespotifymodapk.in/" class="inline-block bg-black text-spotify-green font-bold text-xl py-4 px-12 rounded-full hover:bg-gray-900 hover:scale-105 transition-all shadow-xl border-2 border-black">
+                <i class="fa-solid fa-download mr-2"></i> Download Spotify Mod APK v9.1.26
+            </a>
+        </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section class="py-12 bg-spotify-dark border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-6 text-center">System Requirements</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-4 bg-gray-900 rounded-lg">
+                    <i class="fa-brands fa-android text-3xl text-spotify-green mb-2"></i>
+                    <div class="text-sm text-gray-400">Android 5.0+</div>
+                </div>
+                <div class="p-4 bg-gray-900 rounded-lg">
+                    <i class="fa-solid fa-memory text-3xl text-spotify-green mb-2"></i>
+                    <div class="text-sm text-gray-400">1 GB RAM</div>
+                </div>
+                <div class="p-4 bg-gray-900 rounded-lg">
+                    <i class="fa-solid fa-hard-drive text-3xl text-spotify-green mb-2"></i>
+                    <div class="text-sm text-gray-400">200 MB Free</div>
+                </div>
+                <div class="p-4 bg-gray-900 rounded-lg">
+                    <i class="fa-solid fa-wifi text-3xl text-spotify-green mb-2"></i>
+                    <div class="text-sm text-gray-400">Internet</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PC Section -->
+    <section class="py-16 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-gray-900 to-black rounded-2xl p-8 md:p-12 border border-gray-800 flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-bold mb-4">Spotify for PC (Windows and Mac)</h2>
+                    <p class="text-gray-400 mb-6">Love listening to Spotify on your computer? The desktop version supports keyboard shortcuts, better playlist management, and multitasking.</p>
+                    <a href="https://thespotifymodapk.in/spotify-for-pc/" class="inline-flex items-center text-spotify-green font-bold hover:underline">
+                        Get Spotify for PC Here <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <i class="fa-solid fa-laptop-code text-9xl text-gray-800"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternatives Table -->
+    <section class="py-16 bg-spotify-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8 text-center">Top 5 Alternatives</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-gray-400 border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-700 text-white">
+                            <th class="py-3 px-4">App</th>
+                            <th class="py-3 px-4">Free Version</th>
+                            <th class="py-3 px-4">Offline</th>
+                            <th class="py-3 px-4">Ad Free</th>
+                            <th class="py-3 px-4">Audio Quality</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800">
+                        <tr class="bg-spotify-green/10">
+                            <td class="py-3 px-4 font-bold text-white">Spotify Mod APK</td>
+                            <td class="py-3 px-4 text-spotify-green">Yes</td>
+                            <td class="py-3 px-4 text-spotify-green">Yes</td>
+                            <td class="py-3 px-4 text-spotify-green">Yes</td>
+                            <td class="py-3 px-4">320 kbps</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium text-white">YouTube Music</td>
+                            <td class="py-3 px-4">Yes</td>
+                            <td class="py-3 px-4 text-red-400">No</td>
+                            <td class="py-3 px-4 text-red-400">No</td>
+                            <td class="py-3 px-4">256 kbps</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium text-white">Apple Music</td>
+                            <td class="py-3 px-4 text-red-400">No</td>
+                            <td class="py-3 px-4 text-green-400">Yes</td>
+                            <td class="py-3 px-4 text-green-400">Yes</td>
+                            <td class="py-3 px-4">Lossless</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section class="py-16 bg-black">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">Is Spotify Premium Mod APK Safe?</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-red-900/20 border border-red-900/50 p-6 rounded-xl">
+                    <h3 class="text-red-400 font-bold text-lg mb-3"><i class="fa-solid fa-triangle-exclamation mr-2"></i>Potential Risks</h3>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm">
+                        <li><strong>Account Ban:</strong> Spotify detects modified versions.</li>
+                        <li><strong>Security:</strong> Risk of malware from untrusted sources.</li>
+                        <li><strong>No Support:</strong> You cannot contact Spotify for help.</li>
+                    </ul>
+                </div>
+                <div class="bg-green-900/20 border border-green-900/50 p-6 rounded-xl">
+                    <h3 class="text-spotify-green font-bold text-lg mb-3"><i class="fa-solid fa-shield-halved mr-2"></i>How to Stay Safe</h3>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm">
+                        <li>Download only from trusted sources.</li>
+                        <li>Use a secondary account.</li>
+                        <li>Keep your antivirus active.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-spotify-dark">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-10 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-700 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-gray-900 hover:bg-gray-800 flex justify-between items-center transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-bold text-lg">What is Spotify Premium Mod APK?</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-black text-gray-400 text-sm leading-relaxed border-t border-gray-800">
+                        Spotify Premium Mod APK is a modified version of the official Spotify app that unlocks all premium features like ad free listening, unlimited skips, and offline downloads without needing a paid subscription.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-700 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-gray-900 hover:bg-gray-800 flex justify-between items-center transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-bold text-lg">Can Spotify ban my account?</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-black text-gray-400 text-sm leading-relaxed border-t border-gray-800">
+                        Yes, there is a possibility. Spotify has strengthened its detection systems in 2026 and actively flags accounts using modified versions. Using a separate account is highly recommended.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-700 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-gray-900 hover:bg-gray-800 flex justify-between items-center transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-bold text-lg">Does it work on iPhone?</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-black text-gray-400 text-sm leading-relaxed border-t border-gray-800">
+                        No, APK files only work on Android devices. iPhone users would need to use sideloading tools like AltStore, which is more complex and comes with additional risks.
+                    </div>
+                </div>
+                
+                 <!-- FAQ Item 4 -->
+                 <div class="border border-gray-700 rounded-lg overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-gray-900 hover:bg-gray-800 flex justify-between items-center transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-bold text-lg">What is the latest version?</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-black text-gray-400 text-sm leading-relaxed border-t border-gray-800">
+                        As of 2026, the latest version is based on Spotify v9.1.26.2265, which includes improved performance, bug fixes, and support for new features like AI Playlists and lossless audio.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Thoughts -->
+    <section class="py-16 bg-black border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Final Thoughts</h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                If you want to enjoy everything Spotify has to offer without paying a monthly subscription, the <strong>Spotify Premium Mod APK</strong> is a solid option for 2026. It gives you ad free music, unlimited skips, offline downloads, high quality audio, and all the latest features like AI Playlists and lossless audio support.
+            </p>
+            <p class="text-gray-500 text-sm mb-8">
+                That said, always remember to stay safe by downloading from trusted sources and using a secondary account. And if you can afford it, supporting artists by paying for an official subscription is always the best way to enjoy music.
+            </p>
+            <a href="https://thespotifymodapk.in/" class="inline-block bg-spotify-green text-black font-bold text-lg py-3 px-10 rounded-full hover:bg-green-400 transition-colors">
+                Download Spotify Mod APK
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-gray-900 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="flex items-center gap-2 mb-4 md:mb-0">
+                    <i class="fa-brands fa-spotify text-3xl text-spotify-green"></i>
+                    <span class="font-bold text-xl">SpotifyMod</span>
+                </div>
+                <div class="flex space-x-6 text-gray-400">
+                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="text-center text-gray-600 text-sm">
+                <p>Last Updated: 2026 | This article is regularly updated to reflect the latest version and features.</p>
+                <p class="mt-2">&copy; 2026 Spotify Premium Mod APK Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // FAQ Accordion
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            // Toggle current
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+                button.classList.add('bg-gray-800');
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+                button.classList.remove('bg-gray-800');
+            }
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.style.background = 'rgba(0, 0, 0, 0.95)';
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.style.background = 'rgba(0, 0, 0, 0.8)';
+            }
+        });
+    </script>
+</body>
+</html>
